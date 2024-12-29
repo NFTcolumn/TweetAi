@@ -24,14 +24,14 @@ try:
     )
     
     # Enter username and click next
-    username_field.send_keys('nftmansa')
+    username_field.send_keys('yourusername')
     username_field.send_keys(Keys.RETURN)
     
     # Wait for password field and enter password
     password_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.NAME, "password"))
     )
-    password_field.send_keys('c4n74ack7thisFipr42Lance0x7$')
+    password_field.send_keys('yourpassword')
     password_field.send_keys(Keys.RETURN)
 
     # Wait for the home page to load
